@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "315432475139",
+    "project_id": "libmanagement-3160f",
+    "storage_bucket": "libmanagement-3160f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315432475139:android:0144ba5eb9521e5dae8c36",
+        "android_client_info": {
+          "package_name": "com.example.libmanagement"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBt3-UNHyfP5WwudCFdlRYKlyCh5w74R-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
