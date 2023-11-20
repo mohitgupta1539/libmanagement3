@@ -12,18 +12,22 @@ import '../model/menu_model.dart';
 import '../utils/constants.dart';
 
 List<AdSliderModel> sliderData = [
-  AdSliderModel(url: "assets/slider_banner.png", redirectUrl: Constants.baseApiUrl),
-  AdSliderModel(url: "assets/slider_banner.png", redirectUrl: Constants.baseApiUrl),
-  AdSliderModel(url: "assets/slider_banner.png", redirectUrl: Constants.baseApiUrl),
+  AdSliderModel(
+      url: "assets/slider_banner.png", redirectUrl: Constants.baseApiUrl),
+  AdSliderModel(
+      url: "assets/slider_banner.png", redirectUrl: Constants.baseApiUrl),
+  AdSliderModel(
+      url: "assets/slider_banner.png", redirectUrl: Constants.baseApiUrl),
 ];
 
 List<MenuModel> menus = [
-  MenuModel(name: "Study", asset: "assets/icons/film.svg"),
-  MenuModel(name: "Events", asset: "assets/icons/spotlights.svg"),
-  MenuModel(name: "Plays", asset: "assets/icons/theater_masks.svg"),
-  MenuModel(name: "Sports", asset: "assets/icons/running.svg"),
-  MenuModel(name: "Activity", asset: "assets/icons/flag.svg"),
-  MenuModel(name: "Monum", asset: "assets/icons/pyramid.svg"),
+  MenuModel(name: "Novels", asset: "assets/icons/book-open-text.svg"),
+  MenuModel(name: "Newspaper", asset: "assets/icons/newspaper.svg"),
+  MenuModel(name: "UPSC/SSC", asset: "assets/icons/siren.svg"),
+  MenuModel(name: "NEET", asset: "assets/icons/flask-conical.svg"),
+  MenuModel(name: "JEE", asset: "assets/icons/sigma.svg"),
+  MenuModel(
+      name: "Programming", asset: "assets/icons/square-dashed-bottom-code.svg"),
 ];
 
 // List<OfferModel> offers = [
@@ -50,95 +54,91 @@ List<MenuModel> menus = [
 
 List<MovieModel> movies = [
   MovieModel(
-    title: "for 24 hour Study",
-    description: "description",
-    actors: ["actor a", "actor b"],
+    title: "For 24 hour Study",
+    description: "For 1 day subscription ",
+    actors: ["", ""],
     like: "Study",
     bannerUrl: "assets/movies/movie1.png",
   ),
   MovieModel(
-    title: "for 7 Days",
-    description: "description",
-    actors: ["actor a", "actor b"],
+    title: "For 7 Days",
+    description: "For 7 days library subscription",
+    actors: ["", ""],
     like: "Study",
     bannerUrl: "assets/movies/movie2.png",
   ),
   MovieModel(
-    title: "for 15 Days",
-    description: "description",
-    actors: ["actor a", "actor b"],
+    title: "For 15 Days",
+    description: "for 15 days library subscription",
+    actors: ["", " "],
     like: "Study",
     bannerUrl: "assets/movies/movie3.png",
   ),
   MovieModel(
-    title: "for 1 months",
-    description: "description",
-    actors: ["actor a", "actor b"],
+    title: "For 1 month",
+    description: "For 1 month membership",
+    actors: ["", ""],
     like: "Study",
     bannerUrl: "assets/movies/movie4.png",
   ),
 ];
 
-List<EventModel> events = [
-  EventModel(
-    title: "Happy Halloween 2K19",
-    description: "Music show",
-    date: "date",
-    bannerUrl: "assets/events/event1.png",
-  ),
-  EventModel(
-    title: "Music DJ king monger Sert...",
-    description: "Music show",
-    date: "date",
-    bannerUrl: "assets/events/event2.png",
-  ),
-  EventModel(
-    title: "Summer sounds festiva..",
-    description: "Comedy show",
-    date: "date",
-    bannerUrl: "assets/events/event3.png",
-  ),
-  EventModel(
-    title: "Happy Halloween 2K19",
-    description: "Music show",
-    bannerUrl: "assets/events/event4.png",
-    date: "date",
-  ),
-];
+// List<EventModel> events = [
+//   EventModel(
+//     title: "Happy Halloween 2K19",
+//     description: "Music show",
+//     date: "date",
+//     bannerUrl: "assets/events/event1.png",
+//   ),
+//   EventModel(
+//     title: "Music DJ king monger Sert...",
+//     description: "Music show",
+//     date: "date",
+//     bannerUrl: "assets/events/event2.png",
+//   ),
+//   EventModel(
+//     title: "Summer sounds festiva..",
+//     description: "Comedy show",
+//     date: "date",
+//     bannerUrl: "assets/events/event3.png",
+//   ),
+//   EventModel(
+//     title: "Happy Halloween 2K19",
+//     description: "Music show",
+//     bannerUrl: "assets/events/event4.png",
+//     date: "date",
+//   ),
+// ];
 
 List<EventModel> plays = [
   EventModel(
     title: "Alex in wonderland",
-    description: "Comedy Show",
+    description: "book",
     date: "date",
     bannerUrl: "assets/plays/play1.png",
   ),
   EventModel(
     title: "Marry poppins puffet show",
-    description: "Music Show",
+    description: "book",
     date: "date",
     bannerUrl: "assets/plays/play2.png",
   ),
   EventModel(
-    title: "Patrimandram special dewali",
-    description: "Dibet Show",
+    title: "Good People",
+    description: "book",
     date: "date",
     bannerUrl: "assets/plays/play3.png",
   ),
   EventModel(
-    title: "Happy Halloween 2K19",
-    description: "Music Show",
+    title: "You're a good man- charlie Brown",
+    description: "book",
     bannerUrl: "assets/plays/play4.png",
     date: "date",
   ),
 ];
 
 List<String> cities = [
-  "New Delhi",
-  "Banglore",
-  "Kolkata",
-  "Chennai",
-  "Lucknow",
+  "Gorakhpur",
 ];
 
 List<CrewCastModel> crewCast = [
@@ -169,17 +169,17 @@ List<CrewCastModel> crewCast = [
 ];
 
 List<TheatreModel> theatres = [
-  TheatreModel(id: "1", name: "Best Library"),
+  TheatreModel(id: "1", name: "The Reader's Hub Library"),
   TheatreModel(id: "2", name: "INOX - Prozone mall"),
   // TheatreModel(id: "3", name: "Karpagam theatres - 4K Dolby Atoms"),
   // TheatreModel(id: "4", name: "KG theatres - 4K"),
 ];
 
 List<String> facilityAsset = [
-  "assets/icons/cancel.svg",
+  // "assets/icons/cancel.svg",
   "assets/icons/parking.svg",
-  "assets/icons/cutlery.svg",
-  "assets/icons/rocking_horse.svg",
+  // "assets/icons/cutlery.svg",
+  // "assets/icons/rocking_horse.svg",
 ];
 
 List<String> screens = [

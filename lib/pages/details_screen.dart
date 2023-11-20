@@ -16,11 +16,12 @@ class DetailsScreen extends StatelessWidget {
   titleWidget(model) => Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-           Text(
+          Text(
             model.title,
             style: TextStyle(
               fontWeight: FontWeight.w600,
               fontSize: 20,
+              color: Colors.black,
             ),
           ),
           Row(
@@ -41,101 +42,101 @@ class DetailsScreen extends StatelessWidget {
         ],
       );
 
-  final screensWidget = Row(
-    children: [
-      const Text(
-        "English",
-        style: TextStyle(
-          color: MyTheme.splash,
-        ),
-      ),
-      const SizedBox(
-        width: 10,
-      ),
-      Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(2),
-          color: MyTheme.splash.withOpacity(0.1),
-        ),
-        padding: const EdgeInsets.symmetric(
-          horizontal: 8,
-        ),
-        child: const Text(
-          "3D",
-          style: TextStyle(
-            color: MyTheme.splash,
-          ),
-        ),
-      ),
-      const SizedBox(
-        width: 10,
-      ),
-      Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(2),
-          color: MyTheme.splash.withOpacity(0.1),
-        ),
-        padding: const EdgeInsets.symmetric(
-          horizontal: 8,
-        ),
-        child: const Text(
-          "2D",
-          style: TextStyle(
-            color: MyTheme.splash,
-          ),
-        ),
-      ),
-    ],
-  );
+  // final screensWidget = Row(
+  //   children: [
+  //     const Text(
+  //       "",
+  //       style: TextStyle(
+  //         color: MyTheme.splash,
+  //       ),
+  //     ),
+  //     const SizedBox(
+  //       width: 10,
+  //     ),
+  //     Container(
+  //       decoration: BoxDecoration(
+  //         borderRadius: BorderRadius.circular(2),
+  //         color: MyTheme.splash.withOpacity(0.1),
+  //       ),
+  //       padding: const EdgeInsets.symmetric(
+  //         horizontal: 8,
+  //       ),
+  //       child: const Text(
+  //         "3D",
+  //         style: TextStyle(
+  //           color: MyTheme.splash,
+  //         ),
+  //       ),
+  //     ),
+  //     const SizedBox(
+  //       width: 10,
+  //     ),
+  //     Container(
+  //       decoration: BoxDecoration(
+  //         borderRadius: BorderRadius.circular(2),
+  //         color: MyTheme.splash.withOpacity(0.1),
+  //       ),
+  //       padding: const EdgeInsets.symmetric(
+  //         horizontal: 8,
+  //       ),
+  //       child: const Text(
+  //         "2D",
+  //         style: TextStyle(
+  //           color: MyTheme.splash,
+  //         ),
+  //       ),
+  //     ),
+  //   ],
+  // );
 
-  final descriptionWidget = RichText(
-    text: TextSpan(
-      children: [
-        const WidgetSpan(
-          child: Icon(
-            Icons.history,
-            size: 15,
-            color: Colors.black45,
-          ),
-        ),
-        const WidgetSpan(
-          child: SizedBox(
-            width: 10,
-          ),
-        ),
-         TextSpan(
-          text: "2h 59m",
-          style: TextStyle(
-            color: Colors.black45,
-          ),
-        ),
-        const WidgetSpan(
-          child: SizedBox(
-            width: 10,
-          ),
-        ),
-        WidgetSpan(
-          child: SvgPicture.asset(
-            "assets/icons/theater_masks.svg",
-            height: 15,
-            width: 15,
-            color: Colors.black45,
-          ),
-        ),
-        const WidgetSpan(
-          child: SizedBox(
-            width: 10,
-          ),
-        ),
-         TextSpan(
-          text: "Action, Drama",
-          style: TextStyle(
-            color: Colors.black45,
-          ),
-        ),
-      ],
-    ),
-  );
+  // final descriptionWidget = RichText(
+  //   text: TextSpan(
+  //     children: [
+  //       const WidgetSpan(
+  //         child: Icon(
+  //           Icons.history,
+  //           size: 15,
+  //           color: Colors.black45,
+  //         ),
+  //       ),
+  //       const WidgetSpan(
+  //         child: SizedBox(
+  //           width: 10,
+  //         ),
+  //       ),
+  //       TextSpan(
+  //         text: "",
+  //         style: TextStyle(
+  //           color: Colors.black45,
+  //         ),
+  //       ),
+  //       const WidgetSpan(
+  //         child: SizedBox(
+  //           width: 10,
+  //         ),
+  //       ),
+  //       WidgetSpan(
+  //         child: SvgPicture.asset(
+  //           "assets/icons/theater_masks.svg",
+  //           height: 15,
+  //           width: 15,
+  //           color: Colors.black45,
+  //         ),
+  //       ),
+  //       const WidgetSpan(
+  //         child: SizedBox(
+  //           width: 10,
+  //         ),
+  //       ),
+  //       TextSpan(
+  //         text: "",
+  //         style: TextStyle(
+  //           color: Colors.black45,
+  //         ),
+  //       ),
+  //     ],
+  //   ),
+  // );
 
   Widget block1(model) => Container(
         color: Colors.white,
@@ -150,7 +151,7 @@ class DetailsScreen extends StatelessWidget {
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children:  [
+              children: [
                 Text(
                   model.description,
                   style: TextStyle(
@@ -158,7 +159,7 @@ class DetailsScreen extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "1.9K reviews",
+                  "",
                   style: TextStyle(
                     color: MyTheme.splash,
                   ),
@@ -168,11 +169,11 @@ class DetailsScreen extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            screensWidget,
+            /*  screensWidget, */
             const SizedBox(
               height: 10,
             ),
-            descriptionWidget,
+            /* descriptionWidget, */
           ],
         ),
       );
@@ -196,7 +197,7 @@ class DetailsScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SvgPicture.asset(
-                  "assets/icons/armchair.svg",
+                  "assets/icons/book-open-text.svg",
                   color: Colors.white,
                   height: 20,
                 ),
@@ -204,7 +205,7 @@ class DetailsScreen extends StatelessWidget {
                   width: 10,
                 ),
                 const Text(
-                  "Book Seats",
+                  "Book your slot",
                   style: TextStyle(fontSize: 18),
                 ),
               ],
@@ -228,9 +229,16 @@ class DetailsScreen extends StatelessWidget {
               onPressed: () {
                 Get.back();
               },
-              icon: const Icon(Icons.arrow_back),
+              icon: const Icon(
+                Icons.arrow_back,
+                color: Colors.black,
+              ),
             ),
-            title: Text(model.title),
+            title: Text(model.title,
+                style: TextStyle(
+                    color: const Color.fromARGB(255, 0, 0, 0),
+                    fontWeight: FontWeight.bold,
+                    backgroundColor: Colors.white)),
             pinned: true,
             expandedHeight: 200,
             flexibleSpace: FlexibleSpaceBar(
