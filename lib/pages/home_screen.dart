@@ -31,12 +31,12 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   String city = cities[0];
-  
 
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
-    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(statusBarColor: MyTheme.statusBar));
+    SystemChrome.setSystemUIOverlayStyle(
+        const SystemUiOverlayStyle(statusBarColor: MyTheme.statusBar));
     String? picUrl = AuthController.instance.user!.photoURL;
     picUrl = picUrl ?? Constants.dummyAvatar;
     return SafeArea(
@@ -127,7 +127,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   padding: const EdgeInsets.only(left: 20.0, top: 20),
                   child: Text(
                     "BOOKS",
-                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black.withOpacity(0.8)),
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black.withOpacity(0.8)),
                   ),
                 ),
                 const MyMenuItem(),
@@ -135,7 +137,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   padding: const EdgeInsets.only(left: 20.0, top: 10),
                   child: Text(
                     "Book Seat",
-                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black.withOpacity(0.8)),
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black.withOpacity(0.8)),
                   ),
                 ),
                 const MoviesItems(),
@@ -175,38 +179,40 @@ class _HomeScreenState extends State<HomeScreen> {
                 //   //   zoomControlsEnabled: false,
                 //   // ),
                 // ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 20.0, top: 10, right: 20),
-                  child: Row(
-                    children: [
-                      SvgPicture.asset(
-                        "assets/icons/spotlights.svg",
-                        color: Colors.black.withOpacity(0.8),
-                        height: 18,
-                        width: 18,
-                      ),
-                      const SizedBox(
-                        width: 5,
-                      ),
-                      Text(
-                        "Events".toUpperCase(),
-                        style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black.withOpacity(0.8)),
-                      ),
-                      const Spacer(),
-                      TextButton(
-                        onPressed: () {},
-                        child: const Text(
-                          "View All",
-                          style: TextStyle(color: MyTheme.splash),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                EventItems(
-                  events: events,
-                ),
-                
+                // Padding(
+                //   padding:
+                //       const EdgeInsets.only(left: 20.0, top: 10, right: 20),
+                //   child: Row(
+                //     children: [
+                //       SvgPicture.asset(
+                //         "assets/icons/spotlights.svg",
+                //         color: Colors.black.withOpacity(0.8),
+                //         height: 18,
+                //         width: 18,
+                //       ),
+                //       const SizedBox(
+                //         width: 5,
+                //       ),
+                //       Text(
+                //         "Events".toUpperCase(),
+                //         style: TextStyle(
+                //             fontWeight: FontWeight.bold,
+                //             color: Colors.black.withOpacity(0.8)),
+                //       ),
+                //       const Spacer(),
+                //       TextButton(
+                //         onPressed: () {},
+                //         child: const Text(
+                //           "View All",
+                //           style: TextStyle(color: MyTheme.splash),
+                //         ),
+                //       ),
+                //     ],
+                //   ),
+                // ),
+                // EventItems(
+                //   events: events,
+                // ),
               ],
             ),
           ),
